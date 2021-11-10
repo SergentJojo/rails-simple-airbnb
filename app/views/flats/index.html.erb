@@ -1,0 +1,31 @@
+<nav class="navbar sticky-top navbar-light bg-light d-flex align-items-center justify-content-between">
+  <span class="navbar-brand mb-0 h1">Simple simple</span>
+  <%= link_to "Add Flat", new_flat_path, class: "btn btn-outline-primary" %>
+</nav>
+
+<div class="container">
+  <h1>All our flats (<%= @flats.length %>)</h1>
+  <div class="content">
+    <div class="cards">
+      <% @flats.each do |flat|  %>
+        <div class= "card" >
+          <div class="img" style="background-image: url(https://source.unsplash.com/featured/?<%= flat.name.split(" ").join("%20") %>"></div>
+          <div class="card-description">
+            <h4 class="flat-name"> <%= flat.name %></h4>
+            <p class="flat-category"><%= flat.description %></p>
+            <ul>
+              <li><i class="fas fa-user-friends"></i> <%= flat.number_of_guests %></li>
+              <li><i class="fas fa-euro-sign"></i> <%= flat.price_per_night  %></li>
+            </ul>
+          </div>
+          <%= link_to "More info", flat_path(flat) %>
+        </div>
+
+      <% end %>
+
+    </div>
+  </div>
+
+  <%= link_to "Create a new flat", new_flat_path %>
+
+</div>

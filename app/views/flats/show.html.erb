@@ -1,0 +1,14 @@
+<nav class="navbar sticky-top navbar-light bg-light d-flex align-items-center justify-content-between">
+  <span class="navbar-brand mb-0 h1">Simple simple</span>
+  <%= link_to "Add Flat", new_flat_path, class: "btn btn-outline-primary" %>
+</nav>
+
+<div id='map' style='width: 400px; height: 300px;'></div>
+<script>
+  mapboxgl.accessToken = 'pk.eyJ1Ijoic2VyZ2VudGpvam8iLCJhIjoiY2t2Y2NvNjdsMnVwZDJvbHUza3A0aTZ2ZCJ9.VLkpF3_2SZ0WX276WRKwZg';
+  var map = new mapboxgl.Map({
+    container: 'map',
+    style: 'mapbox://styles/mapbox/streets-v11'
+    
+  });
+</script>

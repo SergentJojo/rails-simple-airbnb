@@ -1,0 +1,87 @@
+
+.btn-primary {
+  color: white;
+}
+
+.btn:hover {
+  color: white;
+}
+
+.navbar {
+  padding: 20px 20px;
+}
+
+.navbar span {
+  margin: 0px;
+}
+
+.content {
+  display: flex;
+}
+.cards {
+  flex-grow: 1;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 16px;
+  padding: 16px;
+}
+
+.container {
+  padding-top: 20px;
+}
+
+h1 {
+  text-align: center;
+  margin: 20px;
+}
+
+.img {
+  background-size: cover;
+  background-position: center;
+  height: 250px; ;
+}
+
+.card {
+  border-radius: 1px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+.card-description {
+  padding: 15px;
+  background-color: rgba(0,0,0,0.05);
+  height: 180px;
+}
+
+.card a {
+  padding: 15px;
+  display: block;
+  color: rgb(1, 105, 217)
+}
+
+.card ul {
+  padding: 0;
+}
+
+.card li {
+  display: inline;
+  list-style: none;
+  margin-right: 5px;
+}
+
+a,
+a:hover {
+  text-decoration: none;
+}
+
+//// add form
+
+#new_flat .btn {
+  margin-top: 10px;
+}
+#new_flat .form-group {
+  margin: 10px 0px;
+}
+
+#new_flat label {
+  font-size: 18px;
+}

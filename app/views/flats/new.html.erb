@@ -1,0 +1,11 @@
+<div class="container">
+  <h1>Create a new flat 🏠</h1>
+  <%= simple_form_for(@flat) do |f| %>
+    <%= f.input :name, hint: 'Minimum 5 letters' %>
+    <%= f.input :address, hint: 'Minimum 5 letters' %>
+    <%= f.input :description, hint: 'Minimum 5 letters' %>
+    <%= f.input :price_per_night %>
+    <%= f.input :number_of_guests %>
+    <%= f.submit class: "btn btn-primary" %>
+  <% end %>
+</div>
